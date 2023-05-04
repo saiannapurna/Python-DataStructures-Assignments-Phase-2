@@ -1,0 +1,24 @@
+
+#class palindrome
+class Palindrome:
+    def checkpal(self,n):
+        k=n
+        sum=0
+        while(n>0):
+            m=n%10
+            sum=(sum*10)+m
+            n=n//10
+        if(sum==k):
+            print("PALINDROM")
+        else:
+            print("NOT PALINDROME")
+
+
+
+
+
+
+n=int(input())
+s=Palindrome()
+s.checkpal(n)
+
